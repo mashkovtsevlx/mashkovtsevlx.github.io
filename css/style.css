@@ -1,0 +1,264 @@
+ @font-face {
+     font-family: Futura-Normal;
+     /* Гарнитура шрифта */
+     src: url(../fonts/futuran.ttf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ /* Eric Meyer's CSS Reset */
+
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol,
+ ul {
+     list-style: none;
+ }
+
+ blockquote,
+ q {
+     quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ /* End of Eric Meyer's CSS Reset */
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
+     display: block;
+ }
+
+ body {
+     font-family: Futura-Normal;
+ }
+
+ .wrapper {
+     width: 100%;
+     min-width: 1000px;
+ }
+
+
+ #preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: #272822;
+ }
+
+ #preloader_img {
+     width: 70%;
+     top: 42.9%;
+     position: absolute;
+     left: 15%;
+ }
+
+ #preloader_img img {
+     display: block;
+     float: left;
+     position: relative;
+     width: 100%;
+ }
+
+ .fullpage_first {
+     background-image: url(../img/background_1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ .fullpage_first row {
+     height: 73px;
+ }
+
+ .fullpage_first .logo {
+     padding-top: 41px;
+ }
+.fullpage_first .contact {
+    height: 46px;
+    margin-top: 27px;
+}
+.fullpage_first .contact a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 3px solid #fe6845;
+    line-height: 30px;
+    font-family: Futura-Normal;
+    font-size: 1.9vw;
+    color: #fe6845;
+    border-radius:0;
+}
+@media(max-width: 1919px)
+{
+    .fullpage_first .contact a{
+        font-size: 2vw;
+    }
+}
+@media(max-width: 1200px)
+{
+    .fullpage_first .contact a{
+        font-size: 3.3vw;
+    }
+}
+@media(max-width: 768px)
+{
+    .fullpage_first .contact a{
+        font-size: 4.7vw;
+    }
+}
+.fullpage_first .contact a:hover {
+    color: #fe6845;
+}
+ /* Header
+-----------------------------------------------------------------------------*/
+
+ .header {
+     height: 150px;
+     background: #FFE680;
+ }
+
+
+ /* Middle
+-----------------------------------------------------------------------------*/
+
+ .content {}
+
+
+
+
+ /* Footer
+-----------------------------------------------------------------------------*/
+
+ .footer {
+     height: 100px;
+     background: #BFF08E;
+ }
