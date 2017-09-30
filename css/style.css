@@ -228,6 +228,13 @@
     .fullpage_first .contact a{
         font-size: 3.3vw;
     }
+    @media (min-width: 769px)
+    {
+        .fullpage_first .contact a{
+            font-size: 6.3vw;
+            height: 7.1vw;
+            line-height: 5.9vw;
+    }
 }
 @media(max-width: 768px)
 {
