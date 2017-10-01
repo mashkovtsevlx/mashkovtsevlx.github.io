@@ -195,6 +195,9 @@
      background-size: cover;
      background-position: center;
  }
+.fullpage_first .container-fluid {
+    height: 100%;
+}
 
  .fullpage_first .first {
      height: 73px;
@@ -203,13 +206,61 @@
      align-items: center;
  }
 
-.fullpage_first .first .btn {
-    padding-bottom: 0;
-    padding-top: 0;
-}
-.centered {
-    text-align: center;
-}
+ .fullpage_first .second {
+     text-align: center;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     padding-bottom: 300px;
+ }
+
+ .fullpage_first .second h1 {
+     font-family: Garamond;
+     font-size: 9rem;
+     color: white;
+ }
+
+ @media (min-width: 1201px) and (max-width: 1746px) {
+     .fullpage_first .second h1 {
+         font-family: Garamond;
+         font-size: 8rem;
+         color: white;
+     }
+ }
+
+ @media (min-width: 981px) and (max-width: 1200px) {
+     .fullpage_first .second h1 {
+         font-family: Garamond;
+         font-size: 8rem;
+         color: white;
+     }
+ }
+
+ @media (min-width: 769px) and (max-width:980px) {
+     .fullpage_first .second h1 {
+         font-family: Garamond;
+         font-size: 4rem;
+         color: white;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .fullpage_first .second h1 {
+         font-family: Garamond;
+         font-size: 5rem;
+         color: white;
+     }
+ }
+
+ .fullpage_first .first .btn {
+     padding-bottom: 0;
+     padding-top: 0;
+ }
+
+ .centered {
+     text-align: center;
+ }
+
  .fullpage_first .contact a {
      border: 3px solid #fe6845;
      font-family: Futura-Normal;
@@ -217,6 +268,7 @@
      color: #fe6845;
      border-radius: 0;
  }
+
  .fullpage_first .contact a:hover {
      color: #fe6845;
  }
