@@ -196,17 +196,17 @@
      background-position: center;
  }
 
- .fullpage_first row {
+ .fullpage_first .row {
      height: 73px;
+     display: flex;
+     margin-top: 18px;
+     align-items: center;
  }
 
- .fullpage_first .logo {
-     padding-top: 41px;
- }
+ .fullpage_first .logo {}
 
  .fullpage_first .contact {
      height: 46px;
-     margin-top: 27px;
  }
 
  .fullpage_first .contact a {
@@ -228,9 +228,7 @@
  }
 
  @media(max-width: 1200px) {
-     .fullpage_first .logo {
-         padding-top: 34px;
-     }
+     .fullpage_first .logo {}
  }
 
  @media(max-width: 768px) {}
