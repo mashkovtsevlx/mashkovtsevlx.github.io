@@ -172,6 +172,13 @@
      left: 0;
      height: 100%;
      width: 100%;
+ }
+#preloader_background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
      background: #272822;
  }
 
@@ -276,6 +283,21 @@
  .fullpage_first .contact a:hover {
      color: #fe6845;
  }
+
+
+
+
+/*Fullpage_second*/
+.fullpage_second{
+    background: url(../img/section2_background.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
 
  /* Header
 -----------------------------------------------------------------------------*/
