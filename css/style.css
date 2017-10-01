@@ -213,33 +213,26 @@
     border: 3px solid #fe6845;
     line-height: 30px;
     font-family: Futura-Normal;
-    font-size: 1.9vw;
+    font-size: 3em;
     color: #fe6845;
     border-radius:0;
 }
-@media(max-width: 1919px)
+@media(max-width: 1672px)
 {
     .fullpage_first .contact a{
-        font-size: 2vw;
+        font-size: 2em;
     }
 }
 @media(max-width: 1200px)
 {
     .fullpage_first .contact a{
-        font-size: 3.3vw;
-    }
-    @media (min-width: 769px)
-    {
-        .fullpage_first .contact a{
-            font-size: 6.3vw;
-            height: 7.1vw;
-            line-height: 5.9vw;
+        
     }
 }
 @media(max-width: 768px)
 {
     .fullpage_first .contact a{
-        font-size: 4.7vw;
+        
     }
 }
 .fullpage_first .contact a:hover {
