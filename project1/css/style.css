@@ -206,6 +206,10 @@
      align-items: center;
  }
 
+.fullpage_first .first .logo_hrep {
+    opacity: 0;
+}
+
  .fullpage_first .second {
      text-align: center;
      height: 100%;

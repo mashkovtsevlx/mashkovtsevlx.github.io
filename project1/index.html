@@ -63,7 +63,7 @@
                 //Design
                 controlArrows: true,
                 verticalCentered: false,
-                sectionsColor: ['#ccc', 'red', 'green', 'blue'],
+                sectionsColor: ['#ccc', '#272822', 'green', 'blue'],
                 paddingTop: '',
                 paddingBottom: '10px',
                 fixedElements: '#header, .footer',
@@ -97,20 +97,28 @@
     </script>
     <script>
         function preloadimage() {
+            var offset = $(".logo_hrep").offset();
+            var width = $(".logo_hrep").width();
+            var height = $(".logo_hrep").height();
             $("#preloader").animate({
-                "opacity": "0"
+                "opacity": "1",
+                "background": "0"
             }, 500);
             $("#preloader_img").animate({
-                "left": "-=10000px",
-                "top": "-10000px"
+                "position" : "fixed",
+                "left": offset.left,
+                "top": offset.top,
+                "width": width,
+                "height": height
             }, 2000);
         }
 
         function preinite() {
             setTimeout(preloadimage, 2000);
             setTimeout(function() {
-                $("#preloader").css('display', 'none')
-            }, 2500);
+                $("#preloader").css('display', 'none');
+                $(".logo_hrep").css('opacity', '1');
+            }, 4000);
         }
 
     </script>
@@ -123,7 +131,7 @@
             <div class="container-fluid">
                 <div class="row first">
                     <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-2 col-md-3 col-sm-6 col-xs-5 logo">
-                        <a href="#firstPage"><img class="img-responsive" src="img/logo/logo.png" alt="logo" /></a>
+                        <a href="#firstPage"><img class="img-responsive logo_hrep" src="img/logo/logo.png" alt="logo" /></a>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-5 col-lg-offset-6 col-md-offset-4 col-sm-offset-1 col-xs-offset-2 contact centered"><a class="btn btn-lg" href="http://google.com">СВЯЗАТЬСЯ</a></div>
                 </div>
@@ -134,11 +142,11 @@
                 </div>
             </div>
         </div>
+        <div class="section"></div>
         <div class="section">
             <div class="normalsc" style="height: 5200px">
             </div>
         </div>
-        <div class="section">Some section</div>
         <div class="section">Some section</div>
     </div>
     <div id="preloader">
