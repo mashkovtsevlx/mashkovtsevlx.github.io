@@ -5,6 +5,27 @@
      /* Путь к файлу со шрифтом */
  }
 
+ @font-face {
+     font-family: Proxima;
+     /* Гарнитура шрифта */
+     src: url(../fonts/Proxima.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: ProximaBold;
+     /* Гарнитура шрифта */
+     src: url(../fonts/ProximaBold.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: Futura-Normal;
+     /* Гарнитура шрифта */
+     src: url(../fonts/ProximaThin.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
  /* Eric Meyer's CSS Reset */
 
  html,
@@ -173,7 +194,8 @@
      height: 100%;
      width: 100%;
  }
-#preloader_background {
+
+ #preloader_background {
      position: fixed;
      top: 0;
      left: 0;
@@ -202,9 +224,10 @@
      background-size: cover;
      background-position: center;
  }
-.fullpage_first .container-fluid {
-    height: 100%;
-}
+
+ .fullpage_first .container-fluid {
+     height: 100%;
+ }
 
  .fullpage_first .first {
      height: 73px;
@@ -213,9 +236,9 @@
      align-items: center;
  }
 
-.fullpage_first .first .logo_hrep {
-    opacity: 0;
-}
+ .fullpage_first .first .logo_hrep {
+     opacity: 0;
+ }
 
  .fullpage_first .second {
      text-align: center;
@@ -225,14 +248,14 @@
      padding-bottom: 300px;
  }
 
- .fullpage_first .second h1 {
+ h1.main {
      font-family: Garamond;
      font-size: 9rem;
      color: white;
  }
 
  @media (min-width: 1201px) and (max-width: 1746px) {
-     .fullpage_first .second h1 {
+     h1.main {
          font-family: Garamond;
          font-size: 8rem;
          color: white;
@@ -240,7 +263,7 @@
  }
 
  @media (min-width: 981px) and (max-width: 1200px) {
-     .fullpage_first .second h1 {
+     h1.main {
          font-family: Garamond;
          font-size: 8rem;
          color: white;
@@ -248,7 +271,7 @@
  }
 
  @media (min-width: 769px) and (max-width:980px) {
-     .fullpage_first .second h1 {
+     h1.main {
          font-family: Garamond;
          font-size: 5rem;
          color: white;
@@ -256,7 +279,7 @@
  }
 
  @media (max-width: 768px) {
-     .fullpage_first .second h1 {
+     h1.main {
          font-family: Garamond;
          font-size: 5rem;
          color: white;
@@ -287,18 +310,40 @@
 
 
 
-/*Fullpage_second*/
-.fullpage_second{
-    background: url(../img/section2_background.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+ /*Fullpage_second*/
+
+ .fullpage_second {
+     background: #272822;
+ }
+
+ .fullpage_second .fullpage_second_header {
+     margin-top: 25px;
+ }
+
+ .fullpage_second h1.main {
+     font-family: Proxima;
+     text-transform: uppercase;
+     color: #bfe5e2;
+     letter-spacing: 7px;
+ }
+.fullpage_second h2.main {
+     font-family: Proxima;
+     text-transform: uppercase;
+     color: #bfe5e2;
+     font-size: 41pt;
+ }
+.fullpage_second img.icon {
+    width: 123px;
 }
-
-
-
-
-
+.fullpage_second img.more {
+    width: 311px;
+}
+.fullpage_second .fullpage_second_row_second{
+    margin-top: 115px;
+}
+.fullpage_second .img-responsive {
+    margin: auto;
+}
  /* Header
 -----------------------------------------------------------------------------*/
 
