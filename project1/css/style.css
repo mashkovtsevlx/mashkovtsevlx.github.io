@@ -260,11 +260,19 @@
      font-size: 9rem;
      color: white;
  }
-h3.main{
-    font-family: Proxima;
-    font-size: 4rem;
-    color: #bfe5e2;
-}
+
+ h3.main {
+     font-family: Proxima;
+     font-size: 4rem;
+     color: #bfe5e2;
+     letter-spacing: 5px;
+ }
+
+ @media (min-width:1200px) {
+     h3.main {
+         font-size: 2rem;
+     }
+ }
 
  @media (min-width: 1201px) and (max-width: 1746px) {
      h1.main {
@@ -393,6 +401,7 @@ h3.main{
          font-size: 30pt;
      }
  }
+
  @media (max-height: 648px) and (min-width: 992px) {
      .fullpage_second .fullpage_second_header {
          margin-bottom: 0px;
@@ -414,14 +423,26 @@ h3.main{
  .service .row {
      display: flex;
      align-items: center;
-     margin-top: 25px;
+     margin-top: 0px;
  }
 
  .service .row img {
      cursor: pointer;
  }
 
-
+ .fullpage_second .service h1.main {
+     font-size: 7rem;
+ }
+.fullpage_second .row.service_back{
+    position:absolute;
+    top:0;
+    height: 100%;
+    width:100%;
+}
+.fullpage_second .row.service_back > div {
+    cursor: pointer;
+    height:100%;
+}
  /* Header
 -----------------------------------------------------------------------------*/
 
