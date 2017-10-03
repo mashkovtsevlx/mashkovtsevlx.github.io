@@ -178,7 +178,7 @@
  }
 
 /*Danger */
-.fp-scroller {
+.fullpage_first .fp-scroller {
     height: 100%;
 }
 
@@ -402,6 +402,7 @@
 .service .row {
     display: flex;
     align-items: center;
+    margin-top: 25px;
 }
 .service .row img {
     cursor: pointer;
