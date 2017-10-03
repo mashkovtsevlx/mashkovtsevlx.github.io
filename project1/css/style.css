@@ -348,16 +348,14 @@
  .fullpage_second .img-responsive {
      margin: auto;
  }
-
- @media (max-width: 1000px) {
+@media (max-width: 981px) {
      .fullpage_second .fullpage_second_row_second {
          margin-top: 0px;
      }
      .fullpage_second .fullpage_second_sevice {
          margin-bottom: 20px;
      }
- }
-
+}
  @media (max-width: 1200px) {
      .fullpage_second h2.main {
          font-size: 30pt;
