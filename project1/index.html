@@ -109,6 +109,13 @@
                 "height": height,
             }, 2000);
         }
+        
+        function show_dev() {
+            $(".service-dev").fadeIn(100);
+        }
+        function close_dev() {
+            $(".service-dev").fadeOut(100);
+        }
 
         function preinite() {
             setTimeout(preloadimage, 2000);
@@ -119,10 +126,6 @@
             setTimeout(function() {
                 $("#preloader_background").fadeOut(2000);
             }, 2000);
-            //setInterval(function() {
-            //    var height = $(".fp-scrollable").height();
-            //    $(".fullpage_first_container").css('height', height);
-            //}, 1)
         }
 
     </script>
@@ -154,7 +157,7 @@
                     <h1 class="main">Услуги</h1>
                 </div>
                 <div class="row">
-                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_sevice">
+                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onclick="show_dev()">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/dev.png" alt="dev" /></div>
@@ -169,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_sevice">
+                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/design.png" alt="dev" /></div>
@@ -186,7 +189,7 @@
                     </div>
                 </div>
                 <div class="row fullpage_second_row_second">
-                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_sevice">
+                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/seo.png" alt="dev" /></div>
@@ -201,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_sevice">
+                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/support.png" alt="dev" /></div>
@@ -219,8 +222,15 @@
                 </div>
             </div>
             
-            <div class="container-fluid service-dev">
-                
+            <div class="container-fluid service service-dev">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <img class="img-responsive" src="img/s2/back.png" alt="back" onclick="close_dev()" />
+                    </div>
+                    <div class="col-xs-10 centered">
+                        <h1 class="main">разработка</h1>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section">
