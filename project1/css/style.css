@@ -348,6 +348,9 @@
     .fullpage_second .fullpage_second_row_second{
     margin-top: 30px;
 }
+    .fullpage_second h2.main {
+     font-size: 30pt;
+ }
 }
  /* Header
 -----------------------------------------------------------------------------*/
