@@ -113,7 +113,7 @@
         function preinite() {
             setTimeout(preloadimage, 2000);
             setTimeout(function() {
-                $("#preloader").css('display', 'none');
+                $("#preloader").fadeOut(1000);
                 $(".logo_hrep").css('opacity', '1');
             }, 4000);
             setTimeout(function() {
