@@ -318,6 +318,7 @@
 
  .fullpage_second .fullpage_second_header {
      margin-top: 25px;
+     margin-bottom: 50px;
  }
 
  .fullpage_second h1.main {
@@ -357,9 +358,6 @@
  }
 
  @media (max-width: 991px) {
-     .fullpage_second .fullpage_second_header {
-         margin-bottom: 20px;
-     }
      .fullpage_second h2.main {
          font-size: 50pt;
      }

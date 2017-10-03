@@ -119,8 +119,10 @@
             setTimeout(function() {
                 $("#preloader_background").fadeOut(2000);
             }, 2000);
-            var height = $(".fp-scrollable").height();
-            $(".fullpage_first_container").css('height', height)
+            setInterval(function(){
+                var height = $(".fp-scrollable").height();
+                $(".fullpage_first_container").css('height', height);              
+            },1)
         }
 
     </script>
