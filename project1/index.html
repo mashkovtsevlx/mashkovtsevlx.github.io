@@ -109,12 +109,17 @@
                 "height": height,
             }, 2000);
         }
-        
+
         function show_dev() {
-            $(".service-dev").fadeIn(100);
+            $(".service-dev").animate({
+                width: 'toggle'
+            }, 200);
         }
+
         function close_dev() {
-            $(".service-dev").fadeOut(100);
+            $(".service-dev").animate({
+                width: 'toggle'
+            }, 200);
         }
 
         function preinite() {
@@ -221,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid service service-dev">
                 <div class="row">
                     <div class="col-xs-1">
@@ -229,6 +234,11 @@
                     </div>
                     <div class="col-xs-10 centered">
                         <h1 class="main">разработка</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-md-offset-3 col-xs-10 col-md-6 centered">
+                        <h3 class="main">Веб-студия занимается созданием сайтов-визиток, лендингов, интернет-магазинов, мобильных приложений, корпоративных сайтов и web-порталов. Проект запускается только после тщательной проработки дизайна и тестирования всех программных и графических элементов</h3>
                     </div>
                 </div>
             </div>

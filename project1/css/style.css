@@ -260,6 +260,11 @@
      font-size: 9rem;
      color: white;
  }
+h3.main{
+    font-family: Proxima;
+    font-size: 5rem;
+    color: #bfe5e2;
+}
 
  @media (min-width: 1201px) and (max-width: 1746px) {
      h1.main {
@@ -388,7 +393,7 @@
          font-size: 30pt;
      }
  }
- @media (max-height: 648px) {
+ @media (max-height: 648px) and (min-width: 992px) {
      .fullpage_second .fullpage_second_header {
          margin-bottom: 0px;
      }
