@@ -119,10 +119,10 @@
             setTimeout(function() {
                 $("#preloader_background").fadeOut(2000);
             }, 2000);
-            setInterval(function(){
-                var height = $(".fp-scrollable").height();
-                $(".fullpage_first_container").css('height', height);              
-            },1)
+            //setInterval(function() {
+            //    var height = $(".fp-scrollable").height();
+            //    $(".fullpage_first_container").css('height', height);
+            //}, 1)
         }
 
     </script>
@@ -131,8 +131,9 @@
 <body class="fp-responsive" onload="preinite()">
 
     <div id="fullpage">
+        <!-- First Slide -->
         <div class="section fullpage_first">
-            <div class="container-fluid fullpage_first_container">
+            <div class="container-fluid">
                 <div class="row first">
                     <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-2 col-md-3 col-sm-6 col-xs-5 logo">
                         <a href="index.html"><img class="img-responsive logo_hrep" src="img/logo/logo.png" alt="logo" /></a>
@@ -146,8 +147,9 @@
                 </div>
             </div>
         </div>
+        <!-- Second slide -->
         <div class="section fullpage_second">
-            <div class="container-fluid testing">
+            <div class="container-fluid">
                 <div class="row centered fullpage_second_header">
                     <h1 class="main">Услуги</h1>
                 </div>
@@ -215,6 +217,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="container-fluid service-dev">
+                
             </div>
         </div>
         <div class="section">
