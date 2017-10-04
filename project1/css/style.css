@@ -20,7 +20,7 @@
  }
 
  @font-face {
-     font-family: Futura-Normal;
+     font-family: ProximaThin;
      /* Гарнитура шрифта */
      src: url(../fonts/ProximaThin.otf);
      /* Путь к файлу со шрифтом */
@@ -261,7 +261,7 @@
  }
 
  h3.main {
-     font-family: Proxima;
+     font-family: ProximaThin;
      font-size: 4rem;
      color: #bfe5e2;
      letter-spacing: 5px;
@@ -471,8 +471,8 @@
  }
 
  h4.service-dev-title {
-     font-family: Proxima;
-     font-size: 1.7rem;
+     font-family: ProximaThin;
+     font-size: 1.65rem;
      color: #bfe5e2;
  }
 
@@ -509,6 +509,12 @@
 }
 .fullpage_second a {
     text-decoration: none;
+}
+.fullpage_second .row.second_contact_button {
+    margin-top: 50px;
+}
+.fullpage_second .second_service_description {
+    margin-bottom: 50px;
 }
  /* Header
 -----------------------------------------------------------------------------*/
