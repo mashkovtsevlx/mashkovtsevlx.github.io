@@ -161,7 +161,6 @@
  }
 
  /* End of Eric Meyer's CSS Reset */
-
  article,
  aside,
  details,
@@ -315,7 +314,7 @@
      }
      .fullpage_first .first .btn {
          width: 100%;
-         font-size: 150%;
+         font-size: 100%;
      }
  }
 
@@ -396,7 +395,7 @@
 
  @media (max-width: 991px) {
      .fullpage_second h2.main {
-         font-size: 50pt;
+         font-size: 4rem;
      }
      .fullpage_second .fullpage_second_row_second {
          margin-top: 0px;
@@ -427,10 +426,7 @@
  .service {
      width: 100%;
      height: 100%;
-     position: absolute;
-     top: 0;
      background: #272822;
-     display: none;
  }
 
  .service .row img {
@@ -464,6 +460,10 @@
      margin-top: 0px;
  }
 
+ .fullpage_second .service-dev .first_item {
+     height: 70px;
+ }
+
  h3.service-dev-title {
      font-size: 3rem;
      color: #bfe5e2;
@@ -494,10 +494,21 @@
          font-size: 1.7rem;
      }
  }
-@media (max-width: 767px) {
-    .fullpage_second .service h1.main {
-         font-size: 3.5rem;
+
+ @media (max-width: 767px) {
+     .fullpage_second .service h1.main {
+         font-size: 2.5rem;
      }
+ }
+
+.fullpage_second a:hover {
+    text-decoration: none;
+}
+.fullpage_second a {
+    text-decoration: none;
+}
+.fullpage_second a {
+    text-decoration: none;
 }
  /* Header
 -----------------------------------------------------------------------------*/
