@@ -132,7 +132,18 @@
                 $("#preloader_background").fadeOut(2000);
             }, 2000);
         }
-
+    </script>
+    <script>
+        function service_change(elem, sour, cont){
+            $(elem).find('.row .col-xs-4 img').attr('src', cont);
+            $(elem).find('.row .col-xs-12 img').attr('src', 'img/s2/more_h.png');
+            $(elem).find('.main').css('color', 'white');
+            $(elem).mouseleave(function() {
+                $(this).find('.row .col-xs-4 img').attr('src', sour);
+                $(elem).find('.main').css('color', '#bfe5e2');
+                $(elem).find('.row .col-xs-12 img').attr('src', 'img/s2/more.png');
+            });
+        }
     </script>
 </head>
 
@@ -162,7 +173,7 @@
                     <h1 class="main">Услуги</h1>
                 </div>
                 <div class="row">
-                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onclick="show_dev()">
+                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onclick="show_dev()" onmouseover="service_change(this, 'img/s2/dev.png', 'img/s2/dev_h.png')">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/dev.png" alt="dev" /></div>
@@ -177,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
+                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/design.png', 'img/s2/design_h.png')">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/design.png" alt="dev" /></div>
@@ -194,7 +205,7 @@
                     </div>
                 </div>
                 <div class="row fullpage_second_row_second">
-                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
+                    <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/seo.png', 'img/s2/seo_h.png')">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/seo.png" alt="dev" /></div>
@@ -209,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service">
+                    <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/support.png', 'img/s2/support_h.png')">
                         <div class="row">
                             <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <div class="centered"><img class="img-responsive" src="img/s2/support.png" alt="dev" /></div>
