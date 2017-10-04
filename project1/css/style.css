@@ -267,7 +267,6 @@
      color: #bfe5e2;
      letter-spacing: 5px;
  }
-
  @media (min-width:1200px) {
      h3.main {
          font-size: 2rem;
@@ -282,23 +281,29 @@
      }
  }
 
- @media (min-width: 981px) and (max-width: 1200px) {
+ @media (min-width: 982px) and (max-width: 1200px) {
      h1.main {
          font-family: Garamond;
          font-size: 8rem;
          color: white;
      }
+     .fullpage_second h3.main {
+         font-size: 1.5rem;
+     }
  }
 
- @media (min-width: 769px) and (max-width:980px) {
+ @media (min-width: 768px) and (max-width:981px) {
      h1.main {
          font-family: Garamond;
          font-size: 5rem;
          color: white;
      }
+     .fullpage_second h3.main {
+         font-size: 1.5rem;
+     }
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 767px) {
      h1.main {
          font-family: Garamond;
          font-size: 5rem;
@@ -444,6 +449,21 @@
     height:100%;
     z-index:10;
 }
+
+.fullpage_second .service-dev .service-dev-first {
+    margin-top: 18px;
+}
+h3.service-dev-title {
+    font-size: 3rem;
+    color: #bfe5e2;
+    text-transform: uppercase;
+}
+h4.service-dev-title {
+    font-family: Proxima;
+    font-size: 1.3rem;
+    color: #bfe5e2;
+}
+
  /* Header
 -----------------------------------------------------------------------------*/
 
