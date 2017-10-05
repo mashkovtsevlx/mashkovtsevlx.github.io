@@ -516,6 +516,16 @@
 .fullpage_second .second_service_description {
     margin-bottom: 50px;
 }
+
+
+/*Section three*/
+
+.three .three_main {
+    width: 100%;
+    background: url("../img/stages_big.png");
+    background-size: cover;
+}
+
  /* Header
 -----------------------------------------------------------------------------*/
 

@@ -97,6 +97,11 @@
             if ((window.location.href.lastIndexOf("index.html") != window.location.href.length - 10) && (window.location.href.lastIndexOf("index.html#firstPage") != window.location.href.length - 20)) {
                 $('#preloader').css('display', 'none');
             }
+            
+            //Stages
+            var viewport_width = $( document ).width();
+            var three_main_height = viewport_width * 2.15;
+            $('.three_main').css('height', three_main_height);
         });
 
     </script>
@@ -670,9 +675,8 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="" style="height: 5200px">
-
+        <div class="section three">
+            <div class="three_main">
             </div>
         </div>
         <div class="section">Some section</div>
