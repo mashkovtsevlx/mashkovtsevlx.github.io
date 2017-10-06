@@ -4,7 +4,12 @@
      src: url(../fonts/futuran.ttf);
      /* Путь к файлу со шрифтом */
  }
-
+ @font-face {
+     font-family: Garamond;
+     /* Гарнитура шрифта */
+     src: url(../fonts/Garamond.ttf);
+     /* Путь к файлу со шрифтом */
+ }
  @font-face {
      font-family: Proxima;
      /* Гарнитура шрифта */
@@ -519,13 +524,31 @@
 
 
 /*Section three*/
-
+.three {
+    background: #272822;
+}
 .three .three_main {
     width: 100%;
     background: url("../img/stages_big.png");
     background-size: cover;
 }
-
+.three_main .three_main_title {
+    font-family: Futura-Normal;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.three .three_main_item {
+    font-family: Garamond;
+    font-size: 2.5rem;
+    color: white;
+}
+.three .three_main_item .three_main_item_number img {
+    float: left;
+}
+.three .three_main_item .three_main_item_text {
+    float: left;
+    padding-right: 100px;
+}
  /* Header
 -----------------------------------------------------------------------------*/
 

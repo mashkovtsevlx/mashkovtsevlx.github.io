@@ -17,11 +17,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
+            var viewport_width = $(document).width();
+            var three_main_height = viewport_width * 2.15;
+            $('.three_main').css('height', three_main_height);
             $('#fullpage').fullpage({
                 //Navigation
                 menu: '#menu',
                 lockAnchors: false,
-                anchors: ['firstPage', 'secondPage'],
+                anchors: ['firstPage', 'secondPage', 'thirdPage'],
                 navigation: false,
                 navigationPosition: 'right',
                 navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -65,7 +68,7 @@
                 //Design
                 controlArrows: false,
                 verticalCentered: false,
-                sectionsColor: ['#ccc', '#272822', 'green', 'blue'],
+                sectionsColor: ['#ccc', '#272822', '#272822', 'blue'],
                 paddingTop: '',
                 paddingBottom: '10px',
                 fixedElements: '#header, .footer',
@@ -97,15 +100,28 @@
             if ((window.location.href.lastIndexOf("index.html") != window.location.href.length - 10) && (window.location.href.lastIndexOf("index.html#firstPage") != window.location.href.length - 20)) {
                 $('#preloader').css('display', 'none');
             }
-            
-            //Stages
-            var viewport_width = $( document ).width();
-            var three_main_height = viewport_width * 2.15;
-            $('.three_main').css('height', three_main_height);
         });
 
     </script>
     <script>
+        function stages_width() {
+            var viewport_width = $(document).width();
+            var three_main_height = viewport_width * 2.15;
+            $('.three_main').css('height', three_main_height);
+            $('.three_main').css('padding-top', three_main_height / 90);
+            $('.three_main .three_main_title').css('margin-bottom', three_main_height / 40);
+            $('.three_main .three_main_title').css('font-size', three_main_height / 700 + 'rem');
+            var three_main_text = three_main_height / 1761;
+            $('.three_main_item_text').css('font-size', three_main_text + 'rem');
+            $('.three_main_item img').css('width', three_main_height / 60);
+            $('.three_main_item .three_main_item_text').css('width', three_main_height / 8);
+            $('.three_main_item .three_main_item_text').css('padding-left', three_main_height / 273);
+            $('.three_main_item:eq(1)').css('margin-top', three_main_height / 40);
+            $('.three_main_item:eq(2)').css('margin-left', three_main_height / 90);
+            $('.three_main_item:eq(2)').css('margin-top', three_main_height / 30);
+        }
+
+
         function preloadimage() {
             var offset = $(".logo_hrep").offset();
             var width = $(".logo_hrep").width();
@@ -158,7 +174,7 @@
     </script>
 </head>
 
-<body class="fp-responsive" onload="preinite()">
+<body class="fp-responsive" onload="stages_width(), preinite()" onresize="stages_width()">
 
     <div id="fullpage">
         <!-- First Slide -->
@@ -240,19 +256,19 @@
                         </div>
                         <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/support.png', 'img/s2/support_h.png')">
                             <a href="#secondPage/slide5">
-                            <div class="row">
-                                <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <div class="centered"><img class="img-responsive" src="img/s2/support.png" alt="dev" /></div>
+                                <div class="row">
+                                    <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/support.png" alt="dev" /></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="centered">
-                                <h2 class="main">поддержка</h2>
-                            </div>
-                            <div class="row">
-                                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                <div class="centered">
+                                    <h2 class="main">поддержка</h2>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -677,9 +693,29 @@
         </div>
         <div class="section three">
             <div class="three_main">
+                <div class="col-xs-12 centered three_main_title">ЭТАПЫ РАЗРАБОТКИ</div>
+                <div class="three_main_item col-lg-offset-1 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/1.png" /></div>
+                    <div class="three_main_item_text">
+                        Определение целей сайта и его позиционирование. На начальном этапе определяются задачи, которые должен решать создаваемый веб-ресурс. Цель ставится заказчиком, а исполнитель, при необходимости, вносит корректировки либо уточняет некоторые моменты
+                    </div>
+                </div>
+                <div class="three_main_item col-lg-offset-5 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/2.png" /></div>
+                    <div class="three_main_item_text">
+                        Составление технического задания. Техническое задание - это документ, на основе которого выполняются все последующие этапы разработки. В нем описываются цели сайта, его целевая аудитория и функционал.
+                    </div>
+                </div>
+                <div class="three_main_item col-lg-offset-1 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/3.png" /></div>
+                    <div class="three_main_item_text">
+                        Разработка макета. На этом этапе создается дизайн страниц веб-ресурса. Специалист разрабатывает стиль страниц сайта и прорисовывает каждый графический элемент. Дизайн создается на основании пожеланий заказчика, указанных им в ТЗ
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section">Some section</div>
+        <div class="section">
+        </div>
     </div>
     <div id="preloader">
         <div id="preloader_background"></div>
