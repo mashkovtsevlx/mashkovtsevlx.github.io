@@ -1,0 +1,776 @@
+ @font-face {
+     font-family: Futura-Normal;
+     /* Гарнитура шрифта */
+     src: url(../fonts/futuran.ttf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: Garamond;
+     /* Гарнитура шрифта */
+     src: url(../fonts/Garamond.ttf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: Proxima;
+     /* Гарнитура шрифта */
+     src: url(../fonts/Proxima.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: ProximaBold;
+     /* Гарнитура шрифта */
+     src: url(../fonts/ProximaBold.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+     font-family: ProximaThin;
+     /* Гарнитура шрифта */
+     src: url(../fonts/ProximaThin.otf);
+     /* Путь к файлу со шрифтом */
+ }
+
+ /* Eric Meyer's CSS Reset */
+
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol,
+ ul {
+     list-style: none;
+ }
+
+ blockquote,
+ q {
+     quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ /* End of Eric Meyer's CSS Reset */
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
+     display: block;
+ }
+
+ /*Danger */
+
+ .fullpage_first .fp-scroller {
+     height: 100%;
+ }
+
+
+ body {
+     font-family: Futura-Normal;
+ }
+
+ .wrapper {
+     width: 100%;
+     min-width: 1000px;
+ }
+
+
+ #preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+ }
+
+ #preloader_background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: #272822;
+ }
+
+ #preloader_img {
+     width: 70%;
+     top: 42.9%;
+     position: absolute;
+     left: 15%;
+ }
+
+ #preloader_img img {
+     display: block;
+     float: left;
+     position: relative;
+     width: 100%;
+ }
+
+ .fullpage_first {
+     background-image: url(../img/background_1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .fullpage_first .container-fluid {
+     height: 100%;
+ }
+
+ .fullpage_first .first {
+     height: 73px;
+     display: flex;
+     margin-top: 32px;
+     align-items: center;
+ }
+
+ .fullpage_first .first .logo_hrep {
+     opacity: 0;
+ }
+
+ .fullpage_first .second {
+     text-align: center;
+     height: 100%;
+     display: flex;
+     margin-top: -30px;
+     align-items: center;
+ }
+
+ h1.main {
+     font-family: Garamond;
+     font-size: 9rem;
+     color: white;
+ }
+
+ h3.main {
+     font-family: ProximaThin;
+     font-size: 4rem;
+     color: #bfe5e2;
+     letter-spacing: 5px;
+ }
+
+ @media (min-width:1200px) {
+     h3.main {
+         font-size: 2rem;
+     }
+ }
+
+ @media (min-width: 1201px) and (max-width: 1746px) {
+     h1.main {
+         font-family: Garamond;
+         font-size: 8rem;
+         color: white;
+     }
+ }
+
+ @media (min-width: 982px) and (max-width: 1200px) {
+     h1.main {
+         font-family: Garamond;
+         font-size: 8rem;
+         color: white;
+     }
+     .fullpage_second h3.main {
+         font-size: 3rem;
+     }
+ }
+
+ @media (min-width: 768px) and (max-width:981px) {
+     h1.main {
+         font-family: Garamond;
+         font-size: 5rem;
+         color: white;
+     }
+     .fullpage_second h3.main {
+         font-size: 2rem;
+     }
+ }
+
+ @media (max-width: 767px) {
+     h1.main {
+         font-family: Garamond;
+         font-size: 4rem;
+         color: white;
+     }
+     .fullpage_second h3.main {
+         font-size: 1.5rem;
+     }
+     .fullpage_first .first .btn {
+         width: 100%;
+         font-size: 100%;
+     }
+ }
+
+ .fullpage_first .first .btn {
+     padding-bottom: 0;
+     padding-top: 0;
+ }
+
+ .centered {
+     text-align: center;
+ }
+
+ .fullpage_first .contact a {
+     border: 3px solid #fe6845;
+     font-family: Futura-Normal;
+     font-size: 4rem;
+     color: #fe6845;
+     border-radius: 0;
+ }
+
+ .fullpage_first .contact a:hover {
+     color: #fe6845;
+ }
+
+
+
+
+ /*Fullpage_second*/
+
+ .fullpage_second {
+     background: #272822;
+ }
+
+ .fullpage_second .fullpage_second_header {
+     margin-top: 25px;
+     margin-bottom: 50px;
+ }
+
+ .fullpage_second h1.main {
+     font-family: Proxima;
+     text-transform: uppercase;
+     color: #bfe5e2;
+     letter-spacing: 7px;
+ }
+
+ .fullpage_second h2.main {
+     font-family: Proxima;
+     text-transform: uppercase;
+     color: #bfe5e2;
+     font-size: 41pt;
+ }
+
+ .fullpage_second img.icon {
+     width: 123px;
+ }
+
+ .fullpage_second img.more {
+     width: 311px;
+ }
+
+ .fullpage_second .fullpage_second_row_second {
+     margin-top: 115px;
+ }
+
+ .fullpage_second .img-responsive {
+     margin: auto;
+ }
+
+ .fullpage_second .fullpage_second_service {
+     cursor: pointer;
+ }
+
+ @media (max-width: 1200px) {
+     .fullpage_second h2.main {
+         font-size: 30pt;
+     }
+ }
+
+ @media (max-width: 991px) {
+     .fullpage_second h2.main {
+         font-size: 4rem;
+     }
+     .fullpage_second .fullpage_second_row_second {
+         margin-top: 0px;
+     }
+     .fullpage_second .fullpage_second_service {
+         margin-bottom: 60px;
+     }
+ }
+
+ @media (max-height: 740px) {
+     .fullpage_second .fullpage_second_row_second {
+         margin-top: 30px;
+     }
+     .fullpage_second h2.main {
+         font-size: 30pt;
+     }
+ }
+
+ @media (max-height: 648px) and (min-width: 992px) {
+     .fullpage_second .fullpage_second_header {
+         margin-bottom: 0px;
+     }
+ }
+
+
+ /*Hidden Blocks in 2-nd Slider*/
+
+ .service {
+     width: 100%;
+     height: 100%;
+     background: #272822;
+ }
+
+ .service .row img {
+     cursor: pointer;
+ }
+
+ .fullpage_second .service h1.main {
+     font-size: 7rem;
+ }
+
+ .fullpage_second .row.service_back {
+     position: absolute;
+     top: 0;
+     height: 100%;
+     width: 100%;
+ }
+
+ .fullpage_second .row.service_back > div {
+     cursor: pointer;
+     height: 100%;
+     z-index: 10;
+ }
+
+ .fullpage_second .service-dev .service-dev-first {
+     margin-top: 18px;
+ }
+
+ .fullpage_second .service-dev .service-dev-header {
+     display: flex;
+     align-items: center;
+     margin-top: 0px;
+ }
+
+ .fullpage_second .service-dev .first_item {
+     height: 90px;
+ }
+
+ h3.service-dev-title {
+     font-size: 3rem;
+     color: #bfe5e2;
+     text-transform: uppercase;
+ }
+
+ h4.service-dev-title {
+     font-family: ProximaThin;
+     font-size: 1.65rem;
+     color: #bfe5e2;
+ }
+
+ @media (min-width: 982px) and (max-width: 1200px) {
+     .service-dev h3.main {
+         font-size: 2rem;
+     }
+ }
+
+ .fullpage_second .service-dev .service-dev-first > div {
+     margin-bottom: 20px;
+ }
+
+ @media (min-width: 768px) and (max-width:981px) {
+     h3.service-dev-title {
+         font-size: 3rem;
+     }
+     h4.service-dev-title {
+         font-size: 1.7rem;
+     }
+ }
+
+ @media (max-width: 767px) {
+     .fullpage_second .service h1.main {
+         font-size: 2.5rem;
+     }
+ }
+
+ .fullpage_second a:hover {
+     text-decoration: none;
+ }
+
+ .fullpage_second a {
+     text-decoration: none;
+ }
+
+ .fullpage_second a {
+     text-decoration: none;
+ }
+
+ .fullpage_second .row.second_contact_button {
+     margin-top: 50px;
+ }
+
+ .fullpage_second .second_service_description {
+     margin-bottom: 50px;
+ }
+
+
+ /*Section three*/
+
+ .three {
+     background: #272822;
+ }
+
+ .three .three_main {
+     width: 100%;
+     background: url("../img/s3/stages_big.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .three_main .three_main_title {
+     font-family: Futura-Normal;
+     font-size: 3rem;
+     color: #ffffff;
+ }
+
+ .three .three_main_item {
+     font-family: Garamond;
+     font-size: 2.5rem;
+     color: white;
+ }
+
+ .three .three_main_item .three_main_item_number img {
+     float: left;
+ }
+
+ .three .three_main_item .three_main_item_text {
+     float: left;
+     padding-right: 100px;
+ }
+
+ @media (max-width: 1199px) {
+     .three .three_main {
+         background: url("../img/s3/stages_medium.png");
+         background-size: cover;
+     }
+ }
+
+ @media (max-width: 991px) {
+     .three .three_main {
+         background: url("../img/s3/stages_small.png");
+         background-size: cover;
+     }
+     .three .three_main_item .three_main_item_text {
+         padding-right: 20px;
+     }
+     .three .three_main_item {
+         display: flex;
+         align-items: center;
+     }
+ }
+
+
+
+ /*Fourth section*/
+
+ .fourth .fourth_item img {
+     width: 100%;
+ }
+
+ .fourth .fourth_item:nth-child(1),
+ .fourth .fourth_item:nth-child(2),
+ .fourth .fourth_item:nth-child(3) {
+     margin-bottom: 2%;
+ }
+
+ @media (max-width: 1199px) {
+     .fourth .fourth_item:nth-child(1),
+     .fourth .fourth_item:nth-child(2),
+     .fourth .fourth_item:nth-child(3),
+     .fourth .fourth_item:nth-child(4) {
+         margin-bottom: 2%;
+     }
+ }
+.fourth .fourth_menu ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 2%;
+}
+.fourth .fourth_menu li {
+    display: inline;
+    margin-right: 3%;
+}
+.fourth .fourth_menu li:last-child {
+    margin-left: none;
+}
+.fourth .fourth_menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #272822;
+    font-size: 4rem;
+    font-family: Futura-Normal;
+}
+@media (max-width: 1199px) {
+    .fourth .fourth_menu li a {
+        font-size: 3rem;
+    }
+}
+.fourth .fourth_menu li a:hover, .fourth .fourth_menu li a.selected {
+    color: #fe6845;
+}
+.fourth .fourth_title {
+    font-family: Futura-Normal;
+     text-transform: uppercase;
+     color: #282923;
+    font-size: 11rem;
+}
+@media (max-width: 1199px){
+    .fourth .fourth_title {
+    font-size: 9rem;
+    }
+}
+@media (max-width: 991px) {
+    .fourth .fourth_title {
+    font-size: 6rem;
+    }
+}
+@media (max-width: 600px) {
+    .fourth .fourth_title {
+    font-size: 4rem;
+    }
+}
+ .fourth .fourth_hovered {
+     position: absolute;
+     display: none;
+     top: 0;
+     background: url(../img/s4/cover.png);
+     background-size: cover;
+     padding: 25% 10% 3%;
+     text-decoration: none;
+     color: white;
+ }
+
+ .fourth .fourth_hovered h1 {
+     font-family: Futura-Normal;
+     text-transform: uppercase;
+     font-size: 4rem;
+ }
+ .fourth .fourth_hovered p {
+     margin-left: 4%;
+     font-size: 1.5rem;
+ }
+@media (max-width: 500px) { 
+    .fourth .fourth_hovered h1 {
+     font-size: 2.5rem;   
+    }
+     .fourth .fourth_hovered p {
+         font-size: 1.2rem;
+    }
+}
+ .fourth .fourth_hovered a {
+     text-decoration: none;
+     color: white;
+ }
+
+ .fourth .fourth_item:hover > .fourth_hovered {
+     display: block;
+ }
+
+ @media (max-width: 1199px) {
+     .fourth_hovered {
+         display: block!important;
+     }
+ }
+
+/*reviews*/
+.reviews_text1 {
+    font-size: 3rem;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.reviews_text2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.reviews_client_text1 {
+    font-size: 3em;
+    margin-top: 50px;
+}
+.reviews_client_text2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+.reviews_client_buttons {
+    position: absolute!important;
+    bottom: 0;
+}
+.reviews_client_buttons img {
+    margin-left: 5%;
+    cursor: pointer;
+}
+.reviews_client_buttons img:first-child {
+    margin-left: 0;
+}
+.reviews_client_block {
+    margin-bottom: 5%;
+    position: relative;
+}
+.reviews_client_hidden {
+    display: none;
+    background-color: #e4f4f3;
+}
+@media (max-width: 992px) {
+    .reviews_client_buttons {
+        position: relative!important;
+        text-align: center;
+        margin-top: 2%;
+    }
+}
+@media (max-width: 500px) {
+     .reviews_client_buttons {
+        margin-left: 15%;
+    }
+}
+ /* Header
+-----------------------------------------------------------------------------*/
+
+ .header {
+     height: 150px;
+     background: #FFE680;
+ }
+
+
+ /* Middle
+-----------------------------------------------------------------------------*/
+
+ .content {}
+
+
+
+
+ /* Footer
+-----------------------------------------------------------------------------*/
+
+ .footer {
+     height: 100px;
+     background: #BFF08E;
+ }

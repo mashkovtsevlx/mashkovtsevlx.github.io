@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/jquery.fullpage.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body class="fp-responsive" onload="" onresize="stages_width()">
+
+    <div id="fullpage">
+        <!-- First Slide -->
+        <div class="section fullpage_first">
+            <div class="container-fluid">
+                <div class="row first">
+                    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-2 col-md-3 col-sm-6 col-xs-5 logo">
+                        <a href="index.html"><img class="img-responsive logo_hrep" src="img/logo/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-5 col-lg-offset-6 col-md-offset-4 col-sm-offset-1 col-xs-offset-2 contact centered"><a class="btn btn-lg" href="http://google.com">СВЯЗАТЬСЯ</a></div>
+                </div>
+                <div class="row second">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <h1 class="main">«HiWeber» - веб-студия,<br /> которая воплощает идеи в реальность</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second slide -->
+        <div class="section fullpage_second">
+            <div class="slide" id="slide1" data-anchor="slide1">
+                <div class="container-fluid" style="height: auto">
+                    <div class="row centered fullpage_second_header">
+                        <h1 class="main">Услуги</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/dev.png', 'img/s2/dev_h.png')">
+                            <a href="#secondPage/slide2">
+                                <div class="row">
+                                    <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/dev.png" alt="dev" /></div>
+                                    </div>
+                                </div>
+                                <div class="centered">
+                                    <h2 class="main">Разработка</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/design.png', 'img/s2/design_h.png')">
+                            <a href="#secondPage/slide3">
+                                <div class="row">
+                                    <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/design.png" alt="dev" /></div>
+                                    </div>
+                                </div>
+                                <div class="centered">
+                                    <h2 class="main">дизайн</h2>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row fullpage_second_row_second">
+                        <div class="col-lg-offset-1 col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/seo.png', 'img/s2/seo_h.png')">
+                            <a href="#secondPage/slide4">
+                                <div class="row">
+                                    <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/seo.png" alt="dev" /></div>
+                                    </div>
+                                </div>
+                                <div class="centered">
+                                    <h2 class="main">сео и маркетинг</h2>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-offset-0 col-lg-5 col-md-6 col-sm-12 col-xs-12 fullpage_second_service" onmouseover="service_change(this, 'img/s2/support.png', 'img/s2/support_h.png')">
+                            <a href="#secondPage/slide5">
+                                <div class="row">
+                                    <div class="col-xs-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/support.png" alt="dev" /></div>
+                                    </div>
+                                </div>
+                                <div class="centered">
+                                    <h2 class="main">поддержка</h2>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="centered"><img class="img-responsive" src="img/s2/more.png" alt="more" /></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2" data-anchor="slide2">
+                <div class="container-fluid service service-dev">
+                    <div class="row service_back">
+                        <div class="col-xs-3 col-sm-1" onclick="location.href='#secondPage/slide1'">
+                        </div>
+                    </div>
+                    <div class="row service-dev-header">
+                        <div class="col-xs-3 col-sm-1">
+                            <img class="img-responsive" src="img/s2/back.png" alt="back" />
+                        </div>
+                        <div class="col-xs-9 col-sm-10 centered">
+                            <h1 class="main">разработка</h1>
+                        </div>
+                    </div>
+                    <div class="row second_service_description">
+                        <div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-md-12 col-lg-8 centered">
+                            <h3 class="main">Веб-студия занимается созданием сайтов-визиток, лендингов, интернет-магазинов, мобильных приложений, корпоративных сайтов и web-порталов. Проект запускается только после тщательной проработки дизайна и тестирования всех программных и графических элементов</h3>
+                        </div>
+                    </div>
+                    <div class="row service-dev-first">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_1.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">сайт визитка</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Сайт-визитка - это, как правило, небольшой веб-ресурс, состоящий из нескольких страниц. Он содержит основную информацию о компании, частном лице, товарах или услугах</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_2.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ИНТЕРНЕТ МАГАЗИН</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Интернет-магазин - веб-ресурс, основная задача которого это продажа товаров. Сайт помогает посетителям ознакомиться с полным ассортиментом продукции, содержит подробное описание товаров и позволяет прочесть отзывы покупателей</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_3.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">КОРПОРАТИВНЫЙ САЙТ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Корпоративный веб-ресурс лучше всего подходит для бизнесменов, которые хотят повысить имидж своей фирмы в глазах партнеров и конкурентов. На сайте представлена полная информация о сфере деятельности компании, ее успехах, наградах, открытии новых филиалов и т.д</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_1.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ЛЕНДИНГ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Landing Page - одностраничный сайт с общей информацией о компании или ее услугах. Основные преимущества подобного веб-ресурса - простота обслуживания и дешевизна разработки</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_2.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ПОРТАЛ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Основная концепция веб-порталов - это предоставление максимального количества сервисов и информации для привлечения и удержания наибольшего количества пользователей</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/dev_6.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Разработка мобильных приложений будет полезна не только стартаперам, но и уже популярным компаниям, которые хотят вдохнуть новую жизнь в свой бренд</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row second_contact_button">
+                                <div class="col-xs-offset-4 col-xs-4">
+                                    <img class="img-responsive" src="img/s2/contact.png" alt="contact" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3" data-anchor="slide3">
+                <div class="container-fluid service service-dev">
+                    <div class="row service_back">
+                        <div class="col-xs-3 col-sm-1" onclick="location.href='#secondPage/slide1'">
+                        </div>
+                    </div>
+                    <div class="row service-dev-header">
+                        <div class="col-xs-3 col-sm-1">
+                            <img class="img-responsive" src="img/s2/back.png" alt="back" />
+                        </div>
+                        <div class="col-xs-9 col-sm-10 centered">
+                            <h1 class="main">дизайн</h1>
+                        </div>
+                    </div>
+                    <div class="row second_service_description">
+                        <div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-md-12 col-lg-8 centered">
+                            <h3 class="main">Разработка дизайна - один из немаловажных этапов при создании веб-ресурса. Наши специалисты прикладывают максимум усилий, чтобы сайт был не только привлекательным, но и удобным для пользователя</h3>
+                        </div>
+                    </div>
+                    <div class="row service-dev-first">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/design_1.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ДИЗАЙН САЙТА</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Первое, на что обращают внимание пользователи, - это оформление сайта. Поэтому грамотно разработанный дизайн веб-ресурса привлечет посетителей и значительно увеличит конверсию</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/design_2.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">МОБИЛЬНОГО ПРИЛОЖЕНИЯ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Дизайн мобильного приложения играет одну из основных ролей при создании ПО. Если оформление не привлекает пользователя или даже затрудняет работу, то приложение тут же удаляется</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/design_3.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ЛОГОТИП</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Логотип - это «лицо» каждой компании. Узнаваемое и запоминающееся лого поможет быстро популяризировать свой бренд и сделать бизнес успешнее
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row second_contact_button">
+                                <div class="col-xs-offset-4 col-xs-4">
+                                    <img class="img-responsive" src="img/s2/contact.png" alt="contact" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide4" data-anchor="slide4">
+                <div class="container-fluid service service-dev">
+                    <div class="row service_back">
+                        <div class="col-xs-3 col-sm-1" onclick="location.href='#secondPage/slide1'">
+                        </div>
+                    </div>
+                    <div class="row service-dev-header">
+                        <div class="col-xs-3 col-sm-1">
+                            <img class="img-responsive" src="img/s2/back.png" alt="back" />
+                        </div>
+                        <div class="col-xs-9 col-sm-10 centered">
+                            <h1 class="main">маркетинг</h1>
+                        </div>
+                    </div>
+                    <div class="row second_service_description">
+                        <div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-md-12 col-lg-8 centered">
+                            <h3 class="main">Команда нацелена только на результат. Грамотная SEO-оптимизация, немалый багаж знаний и многолетний опыт работы позволяет в кратчайшее время вывести сайт в ТОП выдачи
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row service-dev-first">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/market_1.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">SEO-ОПТИМИЗАЦИЯ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">SEO-оптимизация - это основа продвижения и популяризации сайта. Грамотная оптимизация позволит быстро подняться в ТОП поисковой выдачи и значительно сэкономить на рекламе</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/market_2.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">КОНТЕКСТНАЯ РЕКЛАМА</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Контекстная реклама - это платные объявления, появляющиеся в поисковой выдаче по соответствующему запросу и на страницах популярных веб-ресурсов. Главное преимущество такого маркетинга - быстрое привлечение новых посетителей</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/market_3.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">СММ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">SMM - простой и действенный способ популяризировать свой бизнес. Такое продвижение будет полезно для тех компаний, целевая аудитория которой проводит много времени в социальных сетях
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row second_contact_button">
+                                <div class="col-xs-offset-4 col-xs-4">
+                                    <img class="img-responsive" src="img/s2/contact.png" alt="contact" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide5" data-anchor="slide5">
+                <div class="container-fluid service service-dev">
+                    <div class="row service_back">
+                        <div class="col-xs-3 col-sm-1" onclick="location.href='#secondPage/slide1'">
+                        </div>
+                    </div>
+                    <div class="row service-dev-header">
+                        <div class="col-xs-3 col-sm-1">
+                            <img class="img-responsive" src="img/s2/back.png" alt="back" />
+                        </div>
+                        <div class="col-xs-9 col-sm-10 centered">
+                            <h1 class="main">ПОДДЕРЖКА</h1>
+                        </div>
+                    </div>
+                    <div class="row second_service_description">
+                        <div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-md-12 col-lg-8 centered">
+                            <h3 class="main">Сайт-визитка - это, как правило, небольшой веб-ресурс, состоящий из нескольких страниц. Он содержит основную информацию о компании, частном лице, товарах или услугах
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row service-dev-first">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/supp_1.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ОБСЛУЖИВАНИЕ</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Сайт-визитка - это, как правило, небольшой веб-ресурс, состоящий из нескольких страниц. Он содержит основную информацию о компании, частном лице, товарах или услугах</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/supp_2.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">ремонтные работы</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Интернет-магазин - веб-ресурс, основная задача которого это продажа товаров. Сайт помогает посетителям ознакомиться с полным ассортиментом продукции, содержит подробное описание товаров и позволяет прочесть отзывы покупателей</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/supp_3.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">обновление сайта</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Корпоративный веб-ресурс лучше всего подходит для бизнесменов, которые хотят повысить имидж своей фирмы в глазах партнеров и конкурентов. На сайте представлена полная информация о сфере деятельности компании, ее успехах, наградах, открытии новых филиалов и т.д
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/supp_4.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">апгрейд</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Landing Page - одностраничный сайт с общей информацией о компании или ее услугах. Основные преимущества подобного веб-ресурса - простота обслуживания и дешевизна разработки
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="row first_item">
+                                <div class="col-xs-offset-3 col-xs-6 centered">
+                                    <img class="img-responsive" src="img/s2/supp_5.png" />
+                                </div>
+                            </div>
+                            <div class="row second_item">
+                                <div class="col-xs-12 centered">
+                                    <h3 class="service-dev-title">развитие</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-0 col-md-12 col-lg-8 centered">
+                                    <h4 class="service-dev-title">Разработка мобильных приложений будет полезна не только стартаперам, но и уже популярным компаниям, которые хотят вдохнуть новую жизнь в свой бренд
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row second_contact_button">
+                                <div class="col-xs-offset-4 col-xs-4">
+                                    <img class="img-responsive" src="img/s2/contact.png" alt="contact" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section three">
+            <div class="three_main">
+                <div class="col-xs-12 centered three_main_title">ЭТАПЫ РАЗРАБОТКИ</div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-0 col-lg-offset-1 col-xs-12 col-md-12 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/1.png" /></div>
+                    <div class="three_main_item_text">
+                        Определение целей сайта и его позиционирование. На начальном этапе определяются задачи, которые должен решать создаваемый веб-ресурс. Цель ставится заказчиком, а исполнитель, при необходимости, вносит корректировки либо уточняет некоторые моменты
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-5 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/2.png" /></div>
+                    <div class="three_main_item_text">
+                        Составление технического задания. Техническое задание - это документ, на основе которого выполняются все последующие этапы разработки. В нем описываются цели сайта, его целевая аудитория и функционал
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-1 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/3.png" /></div>
+                    <div class="three_main_item_text">
+                        Разработка макета. На этом этапе создается дизайн страниц веб-ресурса. Специалист разрабатывает стиль страниц сайта и прорисовывает каждый графический элемент. Дизайн создается на основании пожеланий заказчика, указанных им в ТЗ
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-2 col-xs-12 col-md-12 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/4.png" /></div>
+                    <div class="three_main_item_text">
+                        Написание контента. Процесс наполнения веб-ресурса контентом занимает некоторое время. Поэтому нужно подумать об этом заранее и убедиться в том, чтобы статьи были готовы к моменту запуска проекта
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-1 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/5.png" /></div>
+                    <div class="three_main_item_text">
+                        Правки маркетолога. Данный шаг нужен для того, чтобы выявить ошибки, допущенные при разработке дизайна и написании контента. Благодаря своевременным правкам можно с минимальными затратами исправить все погрешности и подстроить веб-ресурс под потребности целевой аудитории.
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-2 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/6.png" /></div>
+                    <div class="three_main_item_text">
+                        Верстка. Верстка представляет собой перевод дизайна в HTML и CSS код. Главная задача специалиста - это сделать работу с сайтом одинаково удобной на всех устройствах и во всех распространенных браузерах
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-0 col-xs-12 col-md-12 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/7.png" /></div>
+                    <div class="three_main_item_text">
+                        Программирование. Программирование веб-ресурса - это создание динамки на сайте, организация баз данных, привязка сайта к определенной CMS и разработка таких элементов, как форум, гостевая книга, личный кабинет, новостная лента и т.п.
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-5 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/8.png" /></div>
+                    <div class="three_main_item_text">
+                        Тестирование. Даже несмотря на то, что проверка и исправление ошибок происходит на каждом этапе, окончательное тестирование все же необходимо. Это позволяет откорректировать отображение веб-ресурса во всех современных браузерах, исправить недочеты и проверить слаженность работы всех программных компонентов
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-0 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/9.png" /></div>
+                    <div class="three_main_item_text">
+                        Размещение сайта в интернете. После успешного тестирования веб-ресурс располагается на хостинге. Данный шаг может быть проведен раньше, параллельно с каким-либо из перечисленных выше этапов
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-2 col-xs-12 col-md-12 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/10.png" /></div>
+                    <div class="three_main_item_text">
+                        SEO. SEO-оптимизация осуществляется в строгом соответствии рекомендациям от таких поисковых гигантов, как Google и Яндекс. Это позволяет быстро заявить о своем сайте в интернете и выделить его среди конкурентов.
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-1 col-xs-12 col-md-11 col-lg-10">
+                    <div class="three_main_item_number"><img src="img/s3/11.png" /></div>
+                    <div class="three_main_item_text">
+                        Продвижение сайта. На этом шаге специалисты выводят веб-ресурс на первые позиции в поисковой выдаче. Внешняя оптимизация позволяет увеличить авторитетность сайта, нарастить определенную ссылочную массу и обеспечить стабильный приток посетителей.
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-0 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/12.png" /></div>
+                    <div class="three_main_item_text">
+                        Контекстная реклама. Данный вид интернет-рекламы показывается только тем пользователям, которые интересуются тематикой продвигаемого сайта. Это позволяет в кратчайшие сроки привлечь новых и заинтересованных посетителей
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-3 col-xs-12 col-md-12 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/13.png" /></div>
+                    <div class="three_main_item_text">
+                        CMM продвижение. Продвижение веб-ресурса в социальных сетях - это эффективный способ привлечения аудитории на сайт. Сегодня SMM является наиболее перспективным методом популяризации своего бренда
+                    </div>
+                </div>
+                <div class="three_main_item col-xs-offset-0 col-md-offset-1 col-lg-offset-2 col-xs-12 col-md-11 col-lg-4">
+                    <div class="three_main_item_number"><img src="img/s3/14.png" /></div>
+                    <div class="three_main_item_text">
+                        Поддержка сайта. Профессиональное обслуживание веб-ресурса позволяет превратить его в источник стабильной прибыли. Данный этап включает в себя мероприятия, направленные на поддержание работоспособности проекта
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section fourth">
+            <div class="container-fluid">
+                <div class="row fourth_title">
+                    <div class="col-xs-offset-2 col-lg-offset-3 col-xs-8 col-lg-6 centered">
+                        портфолио
+                    </div>
+                </div>
+                <div class="row fourth_menu">
+                    <div class="col-md-offset-0 col-lg-offset-0 hidden-xs col-md-12 col-lg-12 centered">
+                        <ul>
+                            <li><a href="#" class="selected">все</a></li>
+                            <li><a href="#">разработка сайта</a></li>
+                            <li><a href="#">продвижение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p1.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p2.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p3.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p4.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p5.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4 fourth_item">
+                                <img class="fourth_main_img" src="img/s4/p6.png" alt="portfolio" />
+                                <a class="fourth_hovered" href="#">
+                                    <h1>предприятие</h1>
+                                    <p>описание описание описание описание описание описание описание описание описание описание описание</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="reviews_text1 centered">что говорят о нас?</div>
+                    <div class="reviews_text2 centered">отзывы клиентов</div>
+                </div>
+                <div id="client1" class="row reviews_client_block">
+                    <div class="col-lg-offset-1 col-md-offset-0 hidden-xs col-md-6 col-lg-4">
+                        <img class="reviews_img" src="img/s4/client1.png" alt="client" />
+                    </div>
+                    <div class="col-lg-offset-1 col-lg-5 col-md-offset-0 col-xs-offset-0 col-xs-12 col-md-6 reviews_general">
+                        <div class="col-lg-12 reviews_client_text1">
+                            Владимир Калисичанский
+                        </div>
+                        <div class="col-lg-12 reviews_client_text2">
+                            Команда проявила терпение и при разработке смогла учесть все мои пожелания. Кроме качественно реализованного проекта и оперативного выполнения заказа я получил массу удовольствия при работе с ребятами
+                        </div>
+                        <div class="col-xs-12 reviews_client_buttons centered"><img class="comments_back_button" onclick="toogle_client('#client2', '#client1')" src="img/s4/back.png" alt="back" /><img class="comments_forward_button" onclick="toogle_client('#client2', '#client1')" src="img/s4/forward.png" alt="back" /></div>
+                    </div>
+                </div>
+                <div id="client2" class="row reviews_client_block reviews_client_hidden">
+                    <div class="col-lg-offset-1 col-md-offset-0 hidden-xs col-md-6 col-lg-4">
+                        <img class="reviews_img" src="img/s4/client1.png" alt="client" />
+                    </div>
+                    <div class="col-lg-offset-1 col-md-offset-0 col-xs-offset-0 col-xs-12 col-md-6 col-lg-5 reviews_general">
+                        <div class="col-lg-12 reviews_client_text1">
+                            Владимир Калисичансконь
+                        </div>
+                        <div class="col-lg-12 reviews_client_text2">
+                            Команда проявила терпение и при разработке смогла учесть все мои пожелания. Кроме качественно реализованного проекта и оперативного выполнения заказа я получил массу удовольствия при работе с ребятами
+                        </div>
+                        <div class="col-xs-12 reviews_client_buttons centered"><img class="comments_back_button" onclick="toogle_client('#client2', '#client1')" src="img/s4/back.png" alt="back" /><img class="comments_forward_button" onclick="toogle_client('#client2', '#client1')" src="img/s4/forward.png" alt="back" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader">
+        <div id="preloader_background"></div>
+        <div id="preloader_img">
+            <img src="img/loading.gif" />
+        </div>
+    </div>
+</body>
+
+</html>
